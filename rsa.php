@@ -37,16 +37,15 @@
             }
               $i++;
         }
-        $num1=rand(0,count($data));
-        $num2=rand(0,count($data));
+        $num1=rand(0,count($data)-1);
+        $num2=rand(0,count($data))-1;
 
 echo "<br>>>>>".$num1."   -    ".$num2."<br>";
 
 
-// $p=$data[$num1];
-// $q=$data[$num2];
-$p=13;
-$q=11;
+$p=$data[$num1];
+$q=$data[$num2];
+
 $n=$p*$q;
 $z=($p-1)*($q-1);
 $count=0;
